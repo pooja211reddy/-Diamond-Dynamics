@@ -1,61 +1,66 @@
 💎 Diamond Dynamics
-Price Prediction & Market Segmentation using ML
-📌 Overview
+🚀 Price Prediction & Market Segmentation using Machine Learning
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python"> <img src="https://img.shields.io/badge/Streamlit-App-red?logo=streamlit"> <img src="https://img.shields.io/badge/XGBoost-Model-orange"> <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?logo=scikitlearn"> <img src="https://img.shields.io/badge/Status-Completed-brightgreen"> </p>
+🎯 Project Overview
 
-Diamond Dynamics is a machine learning project that predicts diamond prices and segments diamonds into meaningful market categories using clustering techniques.
+Diamond Dynamics is an end-to-end ML application that:
 
-This project combines:
+🔮 Predicts diamond prices using XGBoost
+📊 Segments diamonds into market categories using K-Means
+🌐 Provides an interactive Streamlit dashboard
+🖼️ App Preview
+📊 Dashboard UI
 
-🔮 Regression (XGBoost) → Price prediction
-📊 Clustering (K-Means) → Market segmentation
-🌐 Streamlit UI → Interactive dashboard
+🎥 Demo (Optional GIF)
+
+👉 (Replace these with your real screenshots — I’ll show how below)
+
 🚀 Features
-💰 Predict diamond price (USD & INR)
-📊 Segment diamonds into market categories
-📈 Interactive visualizations:
-Price distribution
-Cluster scatter plots (Carat vs Price)
-Cluster distribution bar chart
-🎯 User input-based real-time prediction
-🎨 Clean and modern UI using Streamlit
+💰 Real-time Price Prediction (USD & INR)
+📊 Market Segmentation using clustering
+📈 Interactive Visualizations:
+Carat vs Price Scatter Plot
+Price Distribution with prediction line
+Cluster Distribution Bar Chart
+🎯 User input-based predictions
+🎨 Clean & modern UI
 🧠 Machine Learning Models
-1. Price Prediction
+🔹 Price Prediction
 Model: XGBoost Regressor
-Target: price (log-transformed)
-Evaluation:
-MAPE: ~6.79%
-Accuracy: ~93.2%
-2. Market Segmentation
-Model: K-Means Clustering (k=5)
-Features used:
+Target: log(price)
+Performance:
+📉 MAPE: ~6.79%
+🎯 Accuracy: ~93.2%
+🔹 Market Segmentation
+Model: K-Means (k=5)
+
+Features Used:
+
 carat, cut, color, clarity, depth, table, volume
-Output clusters:
-Very Cheap Tiny Diamonds
-Affordable Small Diamonds
-Mid-range Diamonds
-High Value Diamonds
-Premium Luxury Diamonds
+
+Segments:
+
+🟢 Affordable Small Diamonds
+🔵 Mid-range Diamonds
+🟡 High Value Diamonds
+🔴 Premium Luxury Diamonds
+⚪ Very Cheap Tiny Diamonds
 📊 Visualizations
-🔹 Carat vs Price Clustering
-Shows distribution of diamonds across clusters
-🔹 Price Distribution
-Histogram with user’s predicted price highlighted
-🔹 Cluster Distribution
-Number of diamonds per segment
+Plot	Description
+📉 Scatter Plot	Carat vs Price with clusters
+📊 Histogram	Price distribution + your prediction
+📦 Bar Chart	Cluster distribution
 🖥️ Streamlit App
-UI Components:
-Input fields:
-Carat, Cut, Color, Clarity, Dimensions
-Buttons:
-Predict Price
-Predict Market Segment
-Outputs:
-Price (USD + INR)
-Cluster + Segment
-Graphs:
-Scatter plot
-Histogram
-Bar chart
+🔹 Inputs
+Carat
+Cut
+Color
+Clarity
+Dimensions
+🔹 Outputs
+💰 Predicted Price
+📊 Cluster
+🏷️ Market Segment
 ⚙️ Tech Stack
 Python 🐍
 Pandas & NumPy
@@ -64,33 +69,33 @@ XGBoost
 Plotly & Matplotlib
 Streamlit
 📂 Project Structure
-📁 Diamond-Dynamics
+Diamond-Dynamics/
 │
-├── 📄 Diamond_app.py        # Streamlit app
-├── 📄 Diamond_predictor.ipynb
-├── 📄 kmeans_model.pkl
-├── 📄 scaler.pkl
-├── 📄 xgboost_model.pkl
-├── 📄 diamonds.csv
-└── 📄 README.md
-▶️ How to Run
+├── Diamond_app.py
+├── Diamond_predictor.ipynb
+├── kmeans_model.pkl
+├── scaler.pkl
+├── xgboost_model.pkl
+├── diamonds.csv
+└── README.md
+▶️ Run Locally
 pip install -r requirements.txt
 streamlit run Diamond_app.py
 📈 Sample Output
-Predicted Price: $3,361 (~₹2.78L)
-Segment: Mid-range Diamonds / Premium (based on input)
+💰 Price: $3,361 (~₹2.78L)
+🏷️ Segment: Mid-range Diamonds
 ⚠️ Challenges Faced
-Handling categorical encoding consistency
-Feature mismatch between training & prediction
+Encoding categorical variables consistently
+Feature mismatch between training & inference
 Scaling issues with StandardScaler
-Cluster interpretation (unsupervised learning)
+Interpreting unsupervised clusters
 💡 Future Improvements
-🔥 Use PCA for better clustering visualization
-📊 Add SHAP for model explainability
-☁️ Deploy on Streamlit Cloud / AWS
-🤖 Improve clustering with DBSCAN or GMM
-📱 Make mobile-friendly UI
-🙌 Author
+🔥 PCA for better clustering visualization
+📊 SHAP for explainability
+☁️ Deploy on Streamlit Cloud
+🤖 Try DBSCAN / GMM
+📱 Mobile UI improvements
+👩‍💻 Author
 
-Pooja Nandini
+Pooja Reddy
 Capstone Project – Diamond Dynamics
