@@ -63,7 +63,7 @@ Diamond Dynamics is an end-to-end machine learning application that:
 
 ### 🔍 Clustering (Market Segmentation)
 - 📈 Elbow Method
-<p align="center"> <img src="assets/elbow_graph.png" width="60%"/> </p>
+<p align="center"> <img src="elbow_graph.png" width="60%"/> </p>
 - Optimal cluster point: K = 5
 - After K=5, improvement slows down
 
