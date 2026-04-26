@@ -35,8 +35,8 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ### 📦 Dataset
 - 📁 Diamonds Dataset
 - 🔢 ~53,940 rows × 10 features
--🎯 Target: price (log-transformed)
--Features Used:
+- 🎯 Target: price (log-transformed)
+- Features Used:
 - carat, cut, color, clarity, depth, table, volume
 
 ---
@@ -67,10 +67,10 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ---
 
 ### 🔍 Clustering (Market Segmentation)
--📈 Elbow Method
+- 📈 Elbow Method
 <p align="center"> <img src="assets/elbow.png" width="60%"/> </p>
--Optimal cluster point: K = 5
--After K=5, improvement slows down
+- Optimal cluster point: K = 5
+- After K=5, improvement slows down
 
 ## 🏷️ Diamond Market Segmentation
 
@@ -84,12 +84,12 @@ Diamond Dynamics is an end-to-end machine learning application that:
 
 ---
 ### ⚙️ Tech Stack
--🐍 Python
--📊 Pandas, NumPy
--🤖 Scikit-learn
--⚡ XGBoost
--📈 Plotly & Matplotlib
--🌐 Streamlit
+- 🐍 Python
+- 📊 Pandas, NumPy
+- 🤖 Scikit-learn
+- ⚡ XGBoost
+- 📈 Plotly & Matplotlib
+- 🌐 Streamlit
 
 ---
 
@@ -130,8 +130,8 @@ streamlit run Diamond_app.py
 
 ## 👤 Author
 
--Pooja Reddy Nedhunuri
--🎓 Capstone Project – Diamond Dynamics
+- Pooja Reddy Nedhunuri
+- Capstone Project – Diamond Dynamics
 
 
 
