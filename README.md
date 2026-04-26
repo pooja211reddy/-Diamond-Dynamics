@@ -24,7 +24,7 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ## 🖼️ App Preview
 
 ### 📊 Dashboard UI
-![App Screenshot](images/dashboard.png)
+![App Screenshot](Diamond_dashboard.png)
 
 ---
 
