@@ -27,11 +27,6 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ![App Screenshot](Diamond_dashboard.png)
 
 ---
-
-### 🎥 Demo
-![Demo GIF](images/demo.gif)
-
----
 ### 📦 Dataset
 - 📁 Diamonds Dataset
 - 🔢 ~53,940 rows × 10 features
@@ -68,7 +63,7 @@ Diamond Dynamics is an end-to-end machine learning application that:
 
 ### 🔍 Clustering (Market Segmentation)
 - 📈 Elbow Method
-<p align="center"> <img src="assets/elbow.png" width="60%"/> </p>
+<p align="center"> <img src="assets/elbow_graph.png" width="60%"/> </p>
 - Optimal cluster point: K = 5
 - After K=5, improvement slows down
 
