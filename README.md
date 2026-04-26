@@ -2,7 +2,7 @@
 ### 🚀 Price Prediction & Market Segmentation using Machine Learning  
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python">
   <img src="https://img.shields.io/badge/Streamlit-App-red?logo=streamlit">
   <img src="https://img.shields.io/badge/XGBoost-Model-orange">
   <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?logo=scikitlearn">
