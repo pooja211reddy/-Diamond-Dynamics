@@ -33,8 +33,8 @@ Diamond Dynamics is an end-to-end machine learning application that:
 
 ---
 ### 📦 Dataset
--📁 Diamonds Dataset
--🔢 ~53,940 rows × 10 features
+- 📁 Diamonds Dataset
+- 🔢 ~53,940 rows × 10 features
 -🎯 Target: price (log-transformed)
 -Features Used:
 - carat, cut, color, clarity, depth, table, volume
@@ -94,7 +94,7 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ---
 
 ### 📁 Project Structure
-
+```bash
 Diamond-Dynamics/
 │── Diamond_app.py          # 🚀 Streamlit app
 │── Diamond_predictor.ipynb # 📓 Model development notebook
@@ -109,12 +109,13 @@ Diamond-Dynamics/
 │   ├── elbow.png           # 📈 Elbow method plot
 │   └── demo.gif            # 🎬 Demo animation
 
----
+```
 
 ## ▶️ How to Run
+```bash
 pip install -r requirements.txt
 streamlit run Diamond_app.py
-
+```
 ---
 
 ## 📊 Visualizations
