@@ -32,21 +32,25 @@ Diamond Dynamics is an end-to-end machine learning application that:
 ![Demo GIF](images/demo.gif)
 
 ---
-
-## 🚀 Features
-
-- 💰 Real-time price prediction (USD & INR)  
-- 📊 Market segmentation using clustering  
-- 📈 Interactive visualizations:
-  - Carat vs Price scatter plot  
-  - Price distribution with prediction highlight  
-  - Cluster distribution bar chart  
-- 🎯 User input-based predictions  
-- 🎨 Clean and modern UI  
+### 📦 Dataset
+📁 Diamonds Dataset
+🔢 ~53,940 rows × 10 features
+🎯 Target: price (log-transformed)
+Features Used
+carat, cut, color, clarity, depth, table, volume
 
 ---
 
-## 🧠 Machine Learning Models
+### 🤖 Model Comparison
+Model	MAE ↓	RMSE ↓	R² ↑
+🥇 XGBoost	214.11	367.05	0.988
+Random Forest	213.21	389.79	0.986
+Decision Tree	272.96	514.45	0.976
+KNN	296.23	537.55	0.974
+ANN	323.96	549.42	0.973
+❌ Linear Regression	1133.66	2281.33	0.543
+
+---
 
 ### 🔹 Price Prediction Model
 - Model: **XGBoost Regressor**
@@ -55,26 +59,51 @@ Diamond Dynamics is an end-to-end machine learning application that:
   - 📉 MAPE: **~6.79%**
   - 🎯 Accuracy: **~93.2%**
 
+👉 Final Model: XGBoost Regressor
+
 ---
 
-### 🔹 Market Segmentation Model
-- Model: **K-Means Clustering (k=5)**
+### 🔍 Clustering (Market Segmentation)
+📈 Elbow Method
+<p align="center"> <img src="assets/elbow.png" width="60%"/> </p>
+Optimal cluster point: K = 5
+After K=5, improvement slows down
+### 🏷️ Diamond Segments
+Cluster	Segment
+0	💎 Premium Luxury Diamonds
+1	💰 High Value Diamonds
+2	📊 Mid-range Diamonds
+3	🟢 Affordable Small Diamonds
+4	⚪ Very Cheap Tiny Diamonds
 
-**Features Used:**
-- carat  
-- cut  
-- color  
-- clarity  
-- depth  
-- table  
-- volume  
+---
+### ⚙️ Tech Stack
+🐍 Python
+📊 Pandas, NumPy
+🤖 Scikit-learn
+⚡ XGBoost
+📈 Plotly & Matplotlib
+🌐 Streamlit
 
-**Segments:**
-- 🟢 Affordable Small Diamonds  
-- 🔵 Mid-range Diamonds  
-- 🟡 High Value Diamonds  
-- 🔴 Premium Luxury Diamonds  
-- ⚪ Very Cheap Tiny Diamonds  
+---
+
+### 📁 Project Structure
+Diamond-Dynamics/
+│── Diamond_app.py        # Streamlit app
+│── Diamond_predictor.ipynb
+│── kmeans_model.pkl
+│── scaler.pkl
+│── xgboost_model.pkl
+│── diamonds.csv
+│── requirements.txt
+│── README.md
+│── assets/
+│   ├── dashboard.png
+│   ├── elbow.png
+│   └── demo.gif
+▶️ How to Run
+pip install -r requirements.txt
+streamlit run Diamond_app.py
 
 ---
 
@@ -88,31 +117,11 @@ Diamond Dynamics is an end-to-end machine learning application that:
 
 ---
 
-## 🖥️ Streamlit App
+## 👤 Author
 
-### 🔹 Inputs
-- Carat  
-- Cut  
-- Color  
-- Clarity  
-- Dimensions  
+Pooja Reddy Nedhunuri
+🎓 Capstone Project – Diamond Dynamics
 
-### 🔹 Outputs
-- 💰 Predicted Price  
-- 📊 Cluster ID  
-- 🏷️ Market Segment  
 
----
 
-## ⚙️ Tech Stack
 
-- Python 🐍  
-- Pandas & NumPy  
-- Scikit-learn  
-- XGBoost  
-- Plotly & Matplotlib  
-- Streamlit  
-
----
-
-## 📂 Project Structure
